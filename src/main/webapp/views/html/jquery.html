@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+
+    <style type="text/css">
+        div,span,p{/*标签选择器*/
+            width:140px;
+            height:140px;
+            margin:5px;
+            background:#aaa;
+            border:#000 1px solid;
+            float:left;
+            font-size:17px;
+            font-family:Verdana;
+        }
+        div.mini{
+            width:55px;
+            height:55px;
+            background-color:#aaa;
+            font-size:12px;
+        }
+        div.hide{
+            display:none;
+        }
+    </style>
+    <script src="../../statics/js/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="one" id="one">
+    id为one,class为one的div
+    <div class="mini">class为mini</div>
+</div>
+
+<div class="one" id="two" title="test">
+    id为two,title为test的div
+    <div class="mini" title="other">class为mini,title为other</div>
+    <div class="mini" title="test">class为mini,title为test</div>
+</div>
+
+<div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+</div>
+
+<div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini" title="tesst">class为mini,title为tesst</div>
+</div>
+
+<div style="display:none;" class="none">
+    style的display为"none"的div
+</div>
+
+<div class="hide">
+    class为hide的div
+</div>
+
+<div>
+    包含input的type为hidden的div<input type="hidden" size="10">
+</div>
+
+<span id="mover">
+    正在执行动画的span
+</span>
+
+<script>
+      //$("#one").css("background","#bbffaa");
+      //$(".mini").css("background","#bbffaa");
+      //$("*").css("background","#bbffaa");
+      //$("span,#two").css("background","#bbffaa");
+     //$("body div").css("background","#bbffaa");
+     //$(".one + div").css("background","#bbffaa");
+     //$("#two~div").css("background","#bbffaa");
+     //$("div:even").css("background","#aabbff");
+     //$("div:odd").css("background","#ffaabb");
+</script>
+</body>
+</html>
